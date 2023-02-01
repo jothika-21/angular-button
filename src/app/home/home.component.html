@@ -1,0 +1,27 @@
+<div class="container-fluid bg-light position-relative shadow py-3 mb-5">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse justify-content-start" id="navbarCollapse">
+            <div class="navbar-nav font-weight-bold"><a
+                    class="nav-item nav-link active fs-5">Home</a>
+            </div>
+            <div class="navbar-nav font-weight-bold py-0 me-2"><a class="nav-item nav-link active fs-5 ms-4"
+                    [routerLink]="['/home1']">Home1</a>
+            </div>
+            <div class="navbar-nav font-weight-bold py-0"><a class="nav-item nav-link active fs-5 ms-4"
+                    [routerLink]="['/work/work']">Work</a>
+            </div>
+            <div class="navbar-nav font-weight-bold py-0 me-2"><a class="nav-item nav-link active fs-5 ms-4"
+                    [routerLink]="['/work1/work1']">Work1</a>
+            </div>
+
+        </div>
+    </nav>
+</div>
+<button type="button" class="btn btn-secondary btn-lg"(click)="nav('home1')">Home1</button><br><br>
+<button type="button" class="btn btn-secondary btn-lg"(click)="nav('work')">Work</button><br><br>
+<button type="button" class="btn btn-secondary btn-lg"(click)="nav('work1')">Work1</button><br><br>
+<router-outlet></router-outlet>
